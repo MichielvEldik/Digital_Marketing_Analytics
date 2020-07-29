@@ -1,6 +1,6 @@
 # School Project 2019 Assignment 1
 
-This project was basically a difference in difference analysis. 
+This project was basically a difference in difference analysis. The following text is a snapshot of the full report.
 
 ## Introduction
 
