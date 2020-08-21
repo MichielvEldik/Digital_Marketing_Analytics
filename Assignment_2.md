@@ -1,11 +1,7 @@
-# School Project '19: Measuring Advertising Synergies
-
-**Disclaimer: 100% of the contents of this repository is written by me.** 
+# Measuring Advertising Synergies 
 
 The following text is a short summary of the full report written for a school project
 about measuring advertising effectiveness and synergies.
-
-As this was one of my first coding projects, the code is quite messy and unstructured.
 
 ## Introduction
 
