@@ -1,6 +1,6 @@
-# School Project 2019 Assignment 1
+# Assignment 1: Field Experiment to Reveal True ROI of SEA With DiD-Analysis and Regression.
 
-This project was basically a difference in difference analysis. The following text is a snapshot of the full report.
+The following text is a snapshot of the full report.
 
 ## Introduction
 
@@ -9,7 +9,7 @@ This study is aimed at estimating the effectiveness of search engine advertising
 
 ## Regression
 
-the following regression model can be constructed: ŷ = 6.735,1 + 25.121,6 Dtr - 241,0 Dpost - 4.790,3 X + ε. This model basically tells us that moving from pre- to post will cause a decrease of 240,95 clicks. If this is crossed with the manipulation group, an additional decrease of approx. 4.781,55 will occur. Nothing can be confirmed or inferred from this as there are no real estimates of standard errors or p-values. These should be taken into account. The next step is to conduct a linear regression model in R to obtain these model properties among other potentially useful information. 
+the following regression model can be constructed: ŷ = 6.735,1 + 25.121,6 Dtr - 241,0 Dpost - 4.790,3 X + ε. This model tells us that moving from pre- to post will cause a decrease of 240,95 clicks. If this is crossed with the manipulation group, an additional decrease of approx. 4.781,55 will occur. Nothing can be confirmed or inferred from this as there are no real estimates of standard errors or p-values. These should be taken into account. The next step is to conduct a linear regression model in R to obtain these model properties among other potentially useful information. 
 
 The linear model was run by the following R command: “didreg <- lm(TotalTraffic ~ DummyTreatment + DummyPrepost + interaction variable, data = did)”, “Summary(didreg)”. The difference in differences is -4.790. This corresponds roughly to the manually calculated difference in differences (Table 6, β3) which is approximately -4.781,55. This model predicts a -4.790 decrease in the treatment group when moving between the two groups ‘pre’ and ‘post’. The model also predicts a 25.121,6 increase when moving from ‘control’ to ‘treatment’. This corresponds with the estimate for β2 in table 6. The model also shows a -241,0 change when moving between pre- and post groups, which corresponds to the manual calculations of the natural efflux represented by B1 in table 6.
 
